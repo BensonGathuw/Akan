@@ -13,7 +13,7 @@ function getData(){
 
     var cc = parseInt(year.toString().substring(0,2))
     var yy = parseInt(year.toString().substr(-2))
-
+    
     var d = (((cc/4) - 2*cc-1) + ((5*yy/4)) + ((26*(month+1)/10)) + date) % 7
     var d = Math.trunc(d) +1
 
